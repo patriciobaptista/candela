@@ -1,0 +1,322 @@
+/*<---General--->*/
+
+:root {
+--black: #000;
+--bg-maroon: #4A0D0D;
+--orange: #D53F22;
+--cream: #F2DDCA;
+}
+
+@font-face {
+  font-family: "Ortica";
+  src: url("../Ortica-Light.woff.woff2") format("woff2"),
+       url("../Ortica-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Attila Sans";
+  font-weight: bold;
+  src: url("../AttilaSansClassicTrial-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Attila Sans";
+  src: url("../AttilaSansClassicTrial-Medium.otf") format("opentype");
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+    font-family: "Ortica", serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--orange);
+    background-color: var(--cream);
+    scroll-behavior: smooth;
+  }
+
+
+section{
+    height: 100vh;
+    width: 100%;
+  }
+
+.cream-bg{
+    background-color: var(--cream);
+  }
+
+.maroon-bg{
+    background-color: var(--bg-maroon);
+  }
+
+/*<--- header ---->*/
+
+#title{
+  display: none;
+}
+
+#header{
+  background-color: var(--cream);
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 10px;
+  padding-top:20px;
+  position: relative;
+  padding-top: 35px;
+}
+
+
+#header .logo,#nav-menu,.nav-list,.nav-link{
+  display:inline;
+}
+
+.logo{
+  padding-bottom:10px;
+  overflow: hidden;
+}
+
+#header #nav-menu{
+  font-size: 17px;
+  padding-bottom: 0;
+  position: absolute;
+  right:0;
+  bottom: 9;
+}
+
+@media only screen and (max-width: 768px) {
+  #header #nav-menu{
+    display: none;
+  }
+}
+
+
+#header .nav-link{
+  text-transform: uppercase;
+  padding-bottom:0;
+  margin-right:0;
+  margin-left: 22px;
+  font-family: "Ortica", serif;
+}
+
+#header .nav-link a{
+  text-decoration: none;
+  color: var(--bg-maroon);
+}
+
+#header .nav-link a:hover{
+  text-decoration: none;
+  color: var(--bg-maroon);
+}
+
+/* <--- Mobile Nav --->*/
+
+.topnav {
+  float: right;
+  overflow: hidden;
+  position: relative;
+  display: inline;
+}
+
+@media only screen and (min-width: 768px) {
+  .topnav{
+    display: none;
+  }
+}
+
+.topnav #myLinks {
+  display: none;
+  z-index: 10001;
+  position: fixed;
+  background-color: var(--cream);
+  right: 9;
+}
+
+
+.topnav a {
+  color: var(--bg-maroon);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline;
+  width:20%;
+}
+
+
+.topnav a.icon {
+  background: var(--cream);
+  display:block;
+
+}
+
+.topnav a:hover {
+  background-color: var(--cream);
+  color: var(--bg-maroon);
+}
+
+
+/* <--- Hero ---> */
+
+#home{
+  background-color: var(--cream);
+  width: 100%;
+  height: 92vh;
+}
+#home .main-image,.info{
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+#main-image{
+  height:90%;
+  width:100%;
+  object-fit: cover;
+ }
+
+.info{
+  text-transform: uppercase;
+  padding-top: 15px;
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  }
+
+
+
+/* <---- Booking ----> */
+
+#book{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-text{
+  display:flex;
+  margin-top: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+
+/*<---- Secondary Images ----> */
+
+.sec-images-container{
+  display: flex;
+}
+#sec-image{
+  width:50%;
+  height:100vh;
+  display: flex;
+  object-fit: cover;
+ }
+
+
+/* <---- Menu ----> */
+
+.menu{
+  text-align: center;
+  color: var(--bg-maroon);
+  font-size: 20px;
+  height: 100%;
+  padding-top: 75px;
+  font-family: "Attila Sans";
+}
+
+@media only screen and (max-width: 768px) {
+  .menu{
+    font-size: 0.8rem;
+  }
+}
+.menu ul,li{
+  display: block;
+  text-decoration: none;
+  line-height: 25px;
+  font-family: "Attila Sans";
+  font-weight: normal;
+}
+
+.dessert{
+  padding-top: 50px;
+}
+
+.menu .heading{
+  font-size: 20px;
+}
+
+/*<---- Voucher----> */
+
+#voucher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voucher{
+      display:flex;
+      width: 30%;
+      height:60%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #E622EA;
+      color: white;
+      justify-content: center;
+      align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+.voucher{
+    font-size: 0.8rem;
+  }
+}
+
+/*<---- Footer ----> */
+
+footer{
+  background-color: var(--cream);
+  min-height: 160px;
+}
+
+footer .footer-wrapper{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .logo,#contact,.footer-list,.footer-link{
+    display:inline-flex;
+  }
+
+
+footer #contact{
+    display: flex;
+  }
+
+footer #contact .footer-link{
+  font-family: "Ortica", serif;
+  font-size: 18px;
+  color: var(--bg-maroon);
+  margin-left: 50px;
+  padding:0;
+}
+
+footer #contact .footer-link a{
+  color: var(--bg-maroon);
+  text-decoration:none;
+  font-weight: light;
+}

@@ -1,0 +1,52 @@
+title: Home
+preset: page
+pages: false
+fields:
+  photo: 
+    label: Main photo
+    type: files
+  hours:
+    label: Opening hours
+    type: text
+  address:
+    label: Address
+    type: text
+  line:
+    type: line
+  booking:
+    label: Text below booking
+    type: textarea
+  line-b:
+    type: line
+  secondaryImages:
+    label: Secondary images
+    type: files
+    max: 2
+    min: 2
+  line-c:
+    type: line
+  menu:
+    label: Menu items
+    type: list
+  dessert:
+    label: Desserts
+    type: list
+  line-d:
+    type: line
+  voucher:
+    label: Voucher
+    type: files
+  line-e:
+    type: line
+  instagram:
+    label: Instagram
+    type: text
+  fullAddress:
+    label: Full Address
+    type: text
+  phone:
+    label: Contact number
+    type: tel
+  email:
+    label: Email
+    type: email

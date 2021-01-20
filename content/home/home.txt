@@ -1,0 +1,66 @@
+Title: Home
+
+----
+
+Photo:
+
+- candela_22433-1.png
+
+----
+
+Hours: tuesday -- saturday: 5pm till late
+
+----
+
+Address: 155 karangahape road
+
+----
+
+Booking:
+
+FOR LARGE BOOKINGS PLEASE
+EMAIL US AT HELLO@CANDELABAR.CO.NZ
+OR CALL US ON 921 300 88
+
+----
+
+Secondaryimages:
+
+- candela_4571-1.png
+- candela_22315-1.png
+
+----
+
+Menu: <ul><li><p>Tematuku Oysters / 4.5ea</p></li><li><p>Marinated Olives / 8</p></li><li><p>Smoked Kina Butter, Sourdough / 12</p></li><li><p>36 Month Aged Iberico Jamon, Pan Con Tomate / 22</p></li><li><p>Crispy School Prawns / 12</p></li><li><p>Smoked Kahawi Croquettas / 15</p></li><li><p>Lamb Shoulder Empanadas, Chimichurri / 16</p></li><li><p>Half Shell Mussels, Chilli, Lime, Nduja / 14</p></li><li><p>Ceviche, Tigers Milk, Kumara / 21</p></li><li><p>Octopus, Saffron Whipped Potato, Paprika Crumb / 22</p></li><li><p>Burrata Fritta, Romesco, Macadamia / 18</p></li><li><p>Grilled Cabbage, Ajo Blanco / 16</p></li><li><p>Crayfish Tal, Arroz de Negro / 29</p></li><li><p>Mibrasa Grilled Gurnard, Mojo Verde / 24</p></li><li><p>Iberico Pork Taco, Mojo Picon / 19</p></li><li><p>Beef Ribeye, Green Pepper Puree, Chimichurri / 44</p></li></ul>
+
+----
+
+Dessert: <ul><li><p>Burn Basque Cheescake, Tamrillo / 10</p></li><li><p>Churros, Chilli Chocolate / 10</p></li><li><p>Alvear Pedro Ximenez Solera 1927 Montilla-Morile Spain / 14</p></li></ul>
+
+----
+
+Voucher: 
+
+----
+
+Instagram: @candela_krd
+
+----
+
+Fulladdress: 155 Karangahape Road, Auckland 1010
+
+----
+
+Phone: +64 921 300 88
+
+----
+
+Email: hello@candelabar.co.nz
+
+----
+
+Blocks: [{"content":{"image":["pato.png"]},"id":"e0c702f2-d274-4b8c-a5c1-a31ed3459f0a","isHidden":false,"type":"main"},{"content":{"image":["dji_0196.jpg","dji_0195.jpg"]},"id":"934cffba-9577-48e2-a316-41171cd7a219","isHidden":false,"type":"secondary"}]
+
+----
+
+Text: [{"content":{"location":"kirby","image":["juan-pelotas.png"],"src":"","alt":"main image","caption":"","link":"","ratio":"","crop":"false"},"id":"3a060597-aa7c-40dd-8a6b-2c8851d4b587","isHidden":false,"type":"image"}]
