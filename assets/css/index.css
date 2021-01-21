@@ -69,9 +69,9 @@ section{
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 10px;
-  padding-top:20px;
-  position: relative;
   padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -81,21 +81,11 @@ section{
 
 .logo{
   padding-bottom:10px;
-  overflow: hidden;
 }
 
 #header #nav-menu{
   font-size: 17px;
   padding-bottom: 0;
-  position: absolute;
-  right:0;
-  bottom: 9;
-}
-
-@media only screen and (max-width: 768px) {
-  #header #nav-menu{
-    display: none;
-  }
 }
 
 
@@ -118,49 +108,30 @@ section{
 }
 
 /* <--- Mobile Nav --->*/
-
-.topnav {
-  float: right;
-  overflow: hidden;
-  position: relative;
-  display: inline;
-}
-
-@media only screen and (min-width: 768px) {
-  .topnav{
-    display: none;
+@media only screen and (max-width: 768px) {
+  #header{
+    width: 100%;
+    padding-bottom: 0px;
+    display: inline-block;
+    text-align: center;
+    padding-top:20px;
   }
-}
 
-.topnav #myLinks {
-  display: none;
-  z-index: 10001;
-  position: fixed;
-  background-color: var(--cream);
-  right: 9;
-}
+  .logo,#nav-menu{
+    display:inline-block;
+    text-align: justify;
+  }
 
+  #header #nav-menu{
+    font-size: 0.8rem;
+    padding-top:10px;
+  }
 
-.topnav a {
-  color: var(--bg-maroon);
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: inline;
-  width:20%;
-}
+  .nav-link{
+    margin-left: 0px;
+  }
 
-
-.topnav a.icon {
-  background: var(--cream);
-  display:block;
-
-}
-
-.topnav a:hover {
-  background-color: var(--cream);
-  color: var(--bg-maroon);
-}
+  }
 
 
 /* <--- Hero ---> */
@@ -190,6 +161,18 @@ section{
   justify-content: space-between;
   }
 
+@media only screen and (max-width: 768px) {
+  .info{
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+    }
+    #main-image{
+      height:90%;
+      width:100%;
+      object-fit: none;
+     }
+  }
 
 
 /* <---- Booking ----> */
@@ -208,6 +191,11 @@ section{
   font-weight: bold;
   font-size: 21px;
 }
+@media only screen and (max-width: 768px) {
+  .booking-text{
+    font-size: 0.9rem;
+  }
+  }
 
 
 /*<---- Secondary Images ----> */
@@ -222,6 +210,16 @@ section{
   object-fit: cover;
  }
 
+ @media only screen and (max-width: 768px) {
+   .sec-images-container{
+     display: block;
+   }
+   #sec-image{
+     width:100%;
+     height: 50vh;
+     object-fit: cover;
+    }
+   }
 
 /* <---- Menu ----> */
 
@@ -278,6 +276,8 @@ section{
 @media only screen and (max-width: 768px) {
 .voucher{
     font-size: 0.8rem;
+    width:80%;
+    height:80%;
   }
 }
 
@@ -319,4 +319,28 @@ footer #contact .footer-link a{
   color: var(--bg-maroon);
   text-decoration:none;
   font-weight: light;
+}
+
+@media only screen and (max-width: 768px) {
+  footer #contact{
+    width: 50%
+  }
+  .logo{
+    display:flex;
+    align-items: center;
+  }
+  .footer-list{
+    display: block;
+    padding-left: 0;
+    margin-left:0;
+  }
+  .footer-link{
+    font-size: 0.8rem !important;
+  }
+  .footer-wrapper{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    display: flex;
+    justify-content: space-between;
+  }
 }
