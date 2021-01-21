@@ -168,9 +168,8 @@ section{
     text-align: center;
     }
     #main-image{
-      height:90%;
-      width:100%;
-      object-fit: none;
+      object-fit: cover;
+      object-position: 70% 0;
      }
   }
 
@@ -223,18 +222,28 @@ section{
 
 /* <---- Menu ----> */
 
-.menu{
+#menu{
   text-align: center;
   color: var(--bg-maroon);
-  font-size: 20px;
-  height: 100%;
+  font-size: 1.25rem;
   padding-top: 75px;
   font-family: "Attila Sans";
 }
 
+
 @media only screen and (max-width: 768px) {
   .menu{
     font-size: 0.8rem;
+    padding-bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu{
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .menu ul,li{
