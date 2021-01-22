@@ -226,26 +226,18 @@ section{
   text-align: center;
   color: var(--bg-maroon);
   font-size: 1.25rem;
-  padding-top: 75px;
   font-family: "Attila Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-@media only screen and (max-width: 768px) {
-  .menu{
-    font-size: 0.8rem;
-    padding-bottom:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu{
-    padding-top: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .menu ul,li{
   display: block;
   text-decoration: none;
@@ -259,7 +251,45 @@ section{
 }
 
 .menu .heading{
-  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    #menu {
+      font-size: 1.25rem;
+    }
+
+    .menu .heading{
+      font-size: 1.5rem;
+    }
+    .menu ul,li{
+      line-height: 30px;
+    }
+
+    .voucher{
+        font-size: 1.25rem;
+        width:80%;
+        height:80%;
+      }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .menu{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu{
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*<---- Voucher----> */
@@ -289,6 +319,18 @@ section{
     height:80%;
   }
 }
+
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .voucher{
+        font-size: 1.25rem;
+        width:60%;
+        height:60%;
+      }
+    }
 
 /*<---- Footer ----> */
 
