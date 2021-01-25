@@ -1,7 +1,7 @@
 
 <?php snippet('header') ?>
 <main>
-
+  <h1 id="title"><?= $site->title() ?></h1>
   <section id="home" class="cream-bg">
     <article class="main-image">
       <?php if($image = $page->photo()->toFile()): ?>

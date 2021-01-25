@@ -12,8 +12,8 @@
           <path d="M227.13 23.1353H213.367L210.184 31.1343H201.582L214.356 0.864685H226.227L239.001 31.1343H230.313L227.13 23.1353ZM225.41 18.8541L220.206 5.88158L215.044 18.8541H225.41Z" fill="#4A0D0D"/>
         </g>
         <defs>
-          <clipPath id="clip0">
-            <rect width="239" height="32" fill="white"/>
+          <clipPath id="clip2">
+            <rect width="160px" height="22" fill="white"/>
           </clipPath>
         </defs>
       </svg>
@@ -21,7 +21,7 @@
     <div id="contact">
       <ul class="footer-list">
         <li class="footer-link"> <a href="https://www.instagram.com/candela_krd"><?= $page->instagram() ?> </a> </li>
-        <li class="footer-link"> <a href="https://www.google.com/maps/dir/?api=1&destination=+155+Karangahape+Road,+Auckland+CBD,+Auckland+1010,+New+Zealand&travelmode=driving"> <?= $page->fulladdress() ?> </li> </a>
+        <li class="footer-link"> <a href="https://www.google.com/maps/dir/?api=1&destination=+155+Karangahape+Road,+Auckland+CBD,+Auckland+1010,+New+Zealand&travelmode=driving"> <?= $page->fulladdress() ?> </a></li>
         <li class="footer-link"> <a href="tel:+6492130088"><?= $page->phone() ?></a> </li>
         <li class="footer-link"> <a href="mailto:hello@candelabar.co.nz"><?= $page->email() ?></a> </li>
       </ul>

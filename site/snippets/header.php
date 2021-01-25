@@ -28,17 +28,12 @@
           <path d="M227.13 23.1353H213.367L210.184 31.1343H201.582L214.356 0.864685H226.227L239.001 31.1343H230.313L227.13 23.1353ZM225.41 18.8541L220.206 5.88158L215.044 18.8541H225.41Z" fill="#4A0D0D"/>
         </g>
         <defs>
-          <clipPath id="clip0">
-            <rect width="239" height="32" fill="white"/>
+          <clipPath id="clip1">
+            <rect width="160px" height="22" fill="white"/>
           </clipPath>
         </defs>
       </svg>
     </div>
-      <h1 id="title">
-        <a href="<?= $site->url() ?>" class="logo-container">
-          <?= $site->title() ?>
-        </a>
-      </h1>
       <nav id="nav-menu">
         <ul class="nav-list">
           <li class="nav-link"><a href="#book">book</a></li>

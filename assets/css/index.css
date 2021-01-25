@@ -60,7 +60,9 @@ section{
 /*<--- header ---->*/
 
 #title{
-  display: none;
+  overflow: hidden;
+    width: 1px;
+    height: 1px;
 }
 
 #header{
