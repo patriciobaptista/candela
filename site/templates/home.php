@@ -15,8 +15,9 @@
   </section>
   <section id="book" class="maroon-bg">
     <div class="book-wrapper">
-      <div id="rd-widget-frame" style="max-width: 600px; margin: auto;"></div>
-      <input id="rdwidgeturl" name="rdwidgeturl" value="https://booking.resdiary.com/widget/Standard/Candela/4647?includeJquery=false" type="hidden">
+      <div id="rd-widget-frame" style="max-width: 285px; margin: auto;"></div>
+
+<input id="rdwidgeturl" name="rdwidgeturl" value="https://booking.resdiary.com/widget/MiniTall/Candela/4647?includeJquery=false" type="hidden">
       <div class="booking-text">
         <p><?= $page->booking()->kt()->or('For large bookings please <br> email us at hello@candelabar.co.nz <br> or call us on 921 300 88') ?></p>
       </div>
