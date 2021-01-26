@@ -308,11 +308,11 @@ section{
       height:60%;
       margin-left: auto;
       margin-right: auto;
-      background-color: #E622EA;
-      color: white;
       justify-content: center;
       align-items: center;
+      background-color:#F2DDCA; 
 }
+
 
 @media only screen and (max-width: 768px) {
 .voucher{
