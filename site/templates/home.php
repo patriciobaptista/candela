@@ -3,15 +3,12 @@
 <main>
   <h1 id="title"><?= $site->title() ?></h1>
   <section id="home" class="cream-bg">
-    <article class="main-image">
-      <?php if($image = $page->photo()->toFile()): ?>
-        <img id="main-image" src="<?= $image->url() ?>" alt="">
-      <?php endif ?>
+    <article id="main-image" <?php if($image = $page->photo()->toFile()): ?> style="background-image:url(<?php echo $image->url() ?>)" <?php endif ?>>
+      <div class="info">
+       <span class="opening-hours"> <p><?= $page->hours()->or('tuesday - saturday: 5pm till late')  ?></p>  </span>
+       <span class="address"> <p><?= $page->address()->or('155 Karangahape Road') ?></p>  </span>
+      </div>
     </article>
-    <div class="info">
-     <span class="opening-hours"> <p><?= $page->hours()->or('tuesday -- saturday: 5pm till late')  ?></p>  </span>
-     <span class="address"> <p><?= $page->address()->or('155 Karangahape Road') ?></p>  </span>
-    </div>
   </section>
   <section id="book" class="maroon-bg">
     <div class="book-wrapper">
@@ -46,7 +43,7 @@
   </section>
   <section id="voucher" class="maroon-bg">
     <article class="voucher">
-        <iframe class="voucher-embed" src="https://giftcards.nowbookit.com/cards?accountid=7b97cda1-025f-473a-a7dc-90797c90c8b8&venueid=4391" width="100%" height="530" frameborder="0"></iframe>  
+        <iframe class="voucher-embed" src="https://giftcards.nowbookit.com/cards?accountid=7b97cda1-025f-473a-a7dc-90797c90c8b8&venueid=4391" width="100%" height="530" frameborder="0"></iframe>
     </article>
   </section>
 </main>

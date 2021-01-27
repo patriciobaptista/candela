@@ -9,9 +9,16 @@
 
 @font-face {
   font-family: "Ortica";
+  src: url("../Ortica-Bold.woff.woff2") format("woff2"),
+       url("../Ortica-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ortica Light";
   src: url("../Ortica-Light.woff.woff2") format("woff2"),
        url("../Ortica-Light.woff") format("woff");
 }
+
 
 @font-face {
   font-family: "Attila Sans";
@@ -49,6 +56,34 @@ section{
     width: 100%;
   }
 
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  section {
+    height: auto;
+}
+
+.voucher{
+  height: auto;
+}
+
+#home{
+padding-bottom: 5%;
+}
+#menu{
+padding-top: 10%;
+padding-bottom: 10%;
+}
+
+#book{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#voucher{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+}
 .cream-bg{
     background-color: var(--cream);
   }
@@ -150,9 +185,12 @@ section{
   }
 
 #main-image{
-  height:90%;
+  height:100%;
   width:100%;
-  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
  }
 
 .info{
@@ -161,19 +199,42 @@ section{
   font-size: 19px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 2.5%;
   }
+
+  @media only screen and (max-width: 568px) {
+    .info{
+      font-size: 0.8rem;
+      flex-wrap: wrap;
+      align-content: flex-end;
+      justify-content: center;
+      }
+    }
 
 @media only screen and (max-width: 768px) {
   .info{
     font-size: 0.8rem;
-    display: block;
-    text-align: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
     }
+
     #main-image{
-      object-fit: cover;
-      object-position: 70% 0;
+      background-position: 65% 0;
      }
+
   }
+
+  @media only screen
+    and (min-width: 768px)
+    and (max-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+
+      .info{
+        justify-content: space-between;
+        }
+      }
 
 
 /* <---- Booking ----> */
@@ -197,6 +258,14 @@ section{
     font-size: 0.9rem;
   }
   }
+
+  @media only screen and (max-width: 568px) {
+
+  .booking-text{
+    display: none;
+  }
+
+    }
 
 
 /*<---- Secondary Images ----> */
@@ -232,6 +301,7 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .menu{
@@ -243,17 +313,19 @@ section{
 .menu ul,li{
   display: block;
   text-decoration: none;
-  line-height: 25px;
+  line-height: 33px;
   font-family: "Attila Sans";
   font-weight: normal;
 }
 
 .dessert{
   padding-top: 50px;
+  line-height: 33px;
 }
 
 .menu .heading{
   font-size: 1.25rem;
+  line-height: 33px;
 }
 
 @media only screen
@@ -292,7 +364,17 @@ section{
     justify-content: center;
     align-items: center;
   }
+
+  .menu .heading{
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+  .menu ul,li{
+    line-height: 1.5rem;
+  }
 }
+
+
 
 /*<---- Voucher----> */
 
@@ -310,7 +392,7 @@ section{
       margin-right: auto;
       justify-content: center;
       align-items: center;
-      background-color:#F2DDCA; 
+      background-color:#F2DDCA;
 }
 
 
@@ -345,7 +427,7 @@ footer .footer-wrapper{
   width: 95%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
+  padding-top: 7.5%;
   padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
@@ -361,7 +443,7 @@ footer #contact{
   }
 
 footer #contact .footer-link{
-  font-family: "Ortica", serif;
+  font-family: "Ortica Light", serif;
   font-size: 18px;
   color: var(--bg-maroon);
   margin-left: 50px;
@@ -371,29 +453,89 @@ footer #contact .footer-link{
 footer #contact .footer-link a{
   color: var(--bg-maroon);
   text-decoration:none;
-  font-weight: light;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 768px) {
-  footer #contact{
-    width: 50%
-  }
-  .logo{
-    display:flex;
-    align-items: center;
-  }
-  .footer-list{
-    display: block;
-    padding-left: 0;
-    margin-left:0;
-  }
-  .footer-link{
-    font-size: 0.8rem !important;
-  }
+
   .footer-wrapper{
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    font-size: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
   }
+  footer .logo{
+    width: 100%;
+    display:inline-block;
+    justify-content: center;
+    text-align: center;
+  }
+  #contact{
+    display:flex;
+    justify-content: center;
+    width: 100%
+  }
+
+  footer #contact .footer-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer #contact .footer-link{
+    font-size: 0.8rem;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
 }
+
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .footer-wrapper{
+      display:flex;
+      font-size: 0.8rem;
+      justify-content: center;
+      flex-wrap: wrap;
+
+    }
+    footer .logo{
+      width: 100%;
+      display:inline-block;
+      justify-content: center;
+      text-align: center;
+    }
+    #contact{
+      display:flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    footer #contact .footer-list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+
+    footer #contact .footer-link{
+      font-size: 0.9rem;
+      margin-left: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      justify-content: space-between;
+    }
+
+    footer #contact .right{
+      justify-content: flex-end;
+    }
+
+    }

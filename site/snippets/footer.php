@@ -21,9 +21,9 @@
     <div id="contact">
       <ul class="footer-list">
         <li class="footer-link"> <a href="https://www.instagram.com/candela_krd"><?= $page->instagram() ?> </a> </li>
-        <li class="footer-link"> <a href="https://www.google.com/maps/dir/?api=1&destination=+155+Karangahape+Road,+Auckland+CBD,+Auckland+1010,+New+Zealand&travelmode=driving"> <?= $page->fulladdress() ?> </a></li>
+        <li class="footer-link right"> <a href="https://www.google.com/maps/dir/?api=1&destination=+155+Karangahape+Road,+Auckland+CBD,+Auckland+1010,+New+Zealand&travelmode=driving"> <?= $page->fulladdress() ?> </a></li>
         <li class="footer-link"> <a href="tel:+6492130088"><?= $page->phone() ?></a> </li>
-        <li class="footer-link"> <a href="mailto:hello@candelabar.co.nz"><?= $page->email() ?></a> </li>
+        <li class="footer-link right"> <a href="mailto:hello@candelabar.co.nz"><?= $page->email() ?></a> </li>
       </ul>
     </div>
   </div>
