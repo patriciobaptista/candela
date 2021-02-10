@@ -2,9 +2,12 @@ title: Home
 preset: page
 pages: false
 fields:
-  photo: 
+  photo:
     label: Main photo
     type: files
+  days:
+    label: Opening days
+    type: text
   hours:
     label: Opening hours
     type: text
@@ -14,7 +17,7 @@ fields:
   line:
     type: line
   booking:
-    label: Text below booking
+    label: Text - booking section
     type: textarea
   line-b:
     type: line
@@ -25,17 +28,24 @@ fields:
     min: 2
   line-c:
     type: line
+  menuHeading:
+    label: Menu heading
+    type: text
   menu:
     label: Menu items
     type: list
+  dessertsHeading:
+    label: Desserts heading
+    type: text
   dessert:
     label: Desserts
     type: list
-  line-d:
-    type: line
-  voucher:
-    label: Voucher
-    type: files
+  lateNightHeading:
+    label: Late night menu heading
+    type: text
+  lateNightMenu:
+    label: Late night menu
+    type: list
   line-e:
     type: line
   instagram:

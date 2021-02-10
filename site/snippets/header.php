@@ -5,17 +5,27 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
   <title><?= $site->title() ?> | <?= $page->title() ?></title>
-
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href="Favicon_Image_Location"/>
   <link href="https://fonts.googleapis.com/css?family=Ortica|Raleway&display=swap" rel="stylesheet">
   <?= css(['assets/css/index.css', '@auto']) ?>
   <?= css(['assets/css/grid.css', '@auto']) ?>
   <?= js(['assets/js/index.js']) ?>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href=<?php echo url('assets/images/favicon/apple-touch-icon.png') ?>>
+<link rel="icon" type="image/png" sizes="32x32" href=<?php echo url('assets/images/favicon/favicon-32x32.png') ?>>
+<link rel="icon" type="image/png" sizes="16x16" href=<?php echo url('assets/images/favicon/favicon-16x16.png') ?>>
+<link rel="manifest" href="favicon/site.webmanifest">
+<meta name="msapplication-TileColor" content="#4A0D0D">
+<meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
   <div class="page">
     <header id="header">
+      <div class="invisible-div">
+
+      </div>
     <div class="logo">
       <svg width="160px" height="22" viewBox="0 0 239 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0)">
@@ -42,4 +52,22 @@
           <li class="nav-link"><a href="#contact">contact</a></li>
         </ul>
       </nav>
+      <div id="nav-icon1" class="dropbtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="dropdown-content" id="myDropdown">
+        <div class="mobile-links">
+        <a href="#book">book</a>
+        <a href="#menu">menu</a>
+        <a href="#voucher">vouchers</a>
+        <a href="#contact">contact</a>
+        </div>
+        <div class="info">
+         <span class="opening-hours" style="width: 100%; text-align:center;"> <p> <p><?= $page->days()->or('tuesday - saturday')?>: <br> <?= $page->hours()->or('5pm till late')  ?></p>  </span>
+
+         <span style="padding-top:20px; width:100%; text-align: center;" class="address"> <p><?= $page->address()->or('155 Karangahape Road') ?></p>  </span>
+        </div>
+      </div>
     </header>
